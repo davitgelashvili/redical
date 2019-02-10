@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1270px) and (min-width: 1024px){
+	.headbar, .container{
+		width: 95%;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.headbar, .container{
+		width: 90%;
+	}
+	.item{
+		width: calc(100% / 2 - 30px);
+	}
+}
+@media only screen and (max-width: 990px){
+	.menuburger{
+		display: block;
+	}
+	.menubar ul{
+		background: #6610f2;
+		position: absolute;
+		right: 0;
+		z-index: 2;
+		width: 0%;
+		height: 100%;
+		top: 0;
+		transition: 0.1s;
+		overflow: hidden;
+		padding-top: 150px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.menubar ul li{
+		padding: 20px;
+	}
+	.menubar ul li a {
+		font-size: 32px;	
+		transition: 0.5s;
+	}
+	.menubar ul li:hover a{
+		border-bottom: 2px solid red;
+	}
+}
+@media only screen and (max-width: 768px){
+	.headbar, .container{
+		width: 98%;
+	}
+	.item{
+		width: calc(100%);
+	}
+	.page_info {
+	    width: 100%;
+	    float: left;
+	    text-align: left;
+	    margin: 30px 0;
+	}
+	label.label{
+		width: calc(100% / 1)!important;
+	}
+	.optional_form section label {
+		width: calc(100%/1 - 30px);
+	}
+	.network .network_item {
+		width: 100%;
+	}
+	.network .network_item:nth-of-type(2){
+		align-items: flex-start;
+	}
+}
